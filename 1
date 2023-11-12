@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Hope</title>
+    <!-- Adicione links para folhas de estilo aqui quando aprendermos CSS -->
+    <style>
+        /* Adicionar estilos CSS aqui */
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <img src="principal.jpg" alt="Imagem da Clínica" style="width: 100%;">
+    </header>
+
+    <!-- Menu de navegação -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Página Principal</a></li>
+            <li><a href="sobre.html">Sobre a Clínica</a></li>
+            <li><a href="atendimento.html">Horário de Atendimento</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo específico de cada página -->
+    <section id="content">
+        <!-- Conteúdo Página Principal -->
+        <article id="principal">
+            <h1>Bem-vindo à Clínica Hope</h1>
+            <p>Uma breve descrição sobre a clínica...</p>
+        </article>
+
+        <!-- Conteúdo da Página Sobre a Clínica -->
+        <article id="sobre">
+            <h1>Sobre a Clínica</h1>
+            <p>Texto falando sobre a clínica...</p>
+        </article>
+
+        <!-- Conteúdo da Página Horário de Atendimento -->
+        <article id="atendimento">
+            <h1>Horário de Atendimento</h1>
+            <p>Pequeno texto sobre os serviços e tabela de preços:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Serviços</th>
+                        <th>Segunda a Sexta</th>
+                        <th>Sábados</th>
+                        <th>Feriados</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Clínica geral</td>
+                        <td>08h - 19h</td>
+                        <td>08h - 14h</td>
+                        <td>08h - 14h</td>
+                    </tr>
+                    <tr>
+                        <td>Psicologia</td>
+                        <td>08h - 19h</td>
+                        <td>08h - 14h</td>
+                        <td>08h - 14h</td>
+                    </tr>
+                    <tr>
+                        <td>Pediatria</td>
+                        <td>08h - 19h</td>
+                        <td>08h - 18h</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Oftalmologia</td>
+                        <td>08h - 19h</td>
+                        <td>08h - 18h</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+
+        <!-- Conteúdo da Página Contato -->
+        <article id="contato">
+            <h1>Entre em Contato</h1>
+            <p>Telefones de Contato: (xx) xxxxx-xxxx (Celular) / (xx) xxxxx-xxxx (WhatsApp)</p>
+            <p>Endereço: Rua Nome da Rua, Número - Bairro, Cidade</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1dYOUR_COORDINATES!2dLONGITUDE!3dLATITUDE!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zLATITUDE!3zLONGITUDE!5e0!3m2!1sen!2sus!4vYOUR_VERSION" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            
+            <!-- Formulário de Contato -->
+            <form action="processar_formulario.php" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="assunto">Assunto:</label>
+                <input type="text" id="assunto" name="assunto" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar Formulário</button>
+            </form>
+        </article>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Entre em contato: (xx) xxxxx-xxxx / Endereço: Rua Nome da Rua, Número - Bairro, Cidade</p>
+    </footer>
+</body>
+
+</html>
